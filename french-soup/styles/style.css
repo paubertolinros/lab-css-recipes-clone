@@ -3,25 +3,69 @@
 html, body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+  font-weight: 100;
   line-height: 1.5rem;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 100;
-  color: #00
+  color: #ffffff;
+  line-height: 3.5rem;
 }
 
 h3 {
   font-size: 2rem;
   font-weight: 400;
+  margin: 40px 0 30px;
 }
 
 /*---------------------------GENERAL SETTINGS------------------------------------*/
 
 #body-margin {
-  border: 2px solid #000000;
-  margin: 70px 60px
+  margin: 80px;
 }
 
-.section-settings
+.section-settings {
+  border-top: 2px solid #000000;
+  margin: 20px 0 30px
+}
+
+div.images-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+div.images-info img {
+  width: 40%;
+  
+}
+
+/*---------------------------HEADER------------------------------------*/
+
+.header-image {
+  background-image: url("/images/soup.jpg");
+  height: 550px;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.header-image .title1 {
+  text-align: center;
+  padding: 245px;
+}
+
+
+/*---------------------------LISTS DECORATIONS------------------------------------*/
+
+ul.ingredient-list li::before {
+  content: "- ";
+}
+
+ol.direction-list li{
+  counter-increment: contador1;
+}
+
+ol.direction-list li::before {
+  content: counter(contador1) ") ";
+}

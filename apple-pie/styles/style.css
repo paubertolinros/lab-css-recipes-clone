@@ -6,12 +6,11 @@ html {
 }
 
 body {
-font-family: 'Open Sans', sans-serif;
-color: 000000;
-margin: 0;
-font-weight: 100;
-font-size: 1.12rem;
-line-height: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+    color: 000000;
+    font-weight: 100;
+    font-size: 1.12rem;
+    line-height: 1.4rem;
 }
 
 h1 {
@@ -44,8 +43,8 @@ h3 {
 .title1 {
     background-image: url("/images/apple-pie.jpg");
     background-size: cover;
-    background-position: center center;
-    height: 650px;
+    background-position: top center;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,39 +86,22 @@ h3 {
 	content: "- ";	
 }
 
-.ingredients-list li {
-    list-style: none;
-}
-
-.info-image {
-    display: flex;
-    justify-content: center;
-}
-
-.info-image img {
-    width: 350px;
-    padding: 20px 0 0;
-}
-
 /*-------------------------------DIRECTIONS BLOC----------------------------------------*/
 #directions h3{
     text-align: left;
 }
 
-.directions-list {
-	list-style: none;
-	counter-reset: contador1;
-}
 .directions-list li {
 	counter-increment: contador1;
 }
+
 .directions-list li::before {
     content: counter(contador1) ") "
 }
 
 
-/*----------- ALTERNATIVE PATHS
-- PARTING LINE
+/*----------- ALTERNATIVE PATHS---------------- 
+PARTING LINE
 section {
     border-top: 2px solid grey;
 }
