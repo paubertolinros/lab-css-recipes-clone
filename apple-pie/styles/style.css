@@ -27,20 +27,20 @@ h3 {
 
 /*---------GENERAL SETTINGS----------------*/
 
-.break {
+hr.break {
     width: 100%;
     height: 1px;
     margin: 35px 0;
     background-color: #696868;
 }
 
-#body-margin {
+div#body-margin {
     margin: 60px 90px;
 }
 
 /*-----------------------------------HEADER-------------------------------------------*/
 
-.title1 {
+header h1.title1 {
     background-image: url("/images/apple-pie.jpg");
     background-size: cover;
     background-position: top center;
@@ -53,49 +53,54 @@ h3 {
 
 /*------------------------------INTRODUCTION BLOC--------------------------------------*/
 
-.introduction {
+section.introduction {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.introduction p {
+section.introduction p {
     text-align: center;
 }
 
-.info-image {
+div.info-image {
     display: flex;
     justify-content: center;
 }
 
-.info-image img {
+div.info-image img {
     width: 350px;
     padding: 20px 0 0;
 }
 
 
 /*------------------------------INGREDIENTS BLOC--------------------------------------*/
-#ingredients h3{
+section#ingredients h3{
     text-align: left;
 }
-.ingredients-list {
+section#ingredients ul.ingredients-list {
     text-align: left;
+    padding-left: 20px;
 }
-.ingredients-list li::before {
+section#ingredients ul.ingredients-list li::before {
 	content: "- ";	
 }
 
 /*-------------------------------DIRECTIONS BLOC----------------------------------------*/
-#directions h3{
+section#directions h3{
     text-align: left;
 }
 
-.directions-list li {
+section#directions ol.directions-list {
+    padding-left: 20px;
+}
+
+section#directions ol.directions-list li {
 	counter-increment: contador1;
 }
 
-.directions-list li::before {
+section#directions ol.directions-list li::before {
     content: counter(contador1) ") "
 }
 

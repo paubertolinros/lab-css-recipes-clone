@@ -22,11 +22,11 @@ h3 {
 
 /*---------------------------GENERAL SETTINGS------------------------------------*/
 
-#body-margin {
+div#body-margin {
   margin: 80px;
 }
 
-.section-settings {
+section.section-settings {
   border-top: 2px solid #000000;
   margin: 20px 0 30px
 }
@@ -37,35 +37,36 @@ div.images-info {
 }
 
 div.images-info img {
-  width: 40%;
+  width: 35%;
   
 }
 
 /*---------------------------HEADER------------------------------------*/
 
-.header-image {
+header.header-image {
   background-image: url("/images/soup.jpg");
   height: 550px;
   background-position: bottom center;
   background-size: cover;
 }
 
-.header-image .title1 {
+header.header-image .title1 {
   text-align: center;
-  padding: 245px;
+  padding: 243px;
 }
 
 
 /*---------------------------LISTS DECORATIONS------------------------------------*/
 
-ul.ingredient-list li::before {
+section.section-settings ul.ingredient-list li::before {
   content: "- ";
 }
 
-ol.direction-list li{
+section.section-settings ol.direction-list li{
   counter-increment: contador1;
+  padding-left: 20px;
 }
 
-ol.direction-list li::before {
+section.section-settings ol.direction-list li::before {
   content: counter(contador1) ") ";
 }
