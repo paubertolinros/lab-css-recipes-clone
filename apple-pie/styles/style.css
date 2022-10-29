@@ -41,7 +41,7 @@ div#body-margin {
 /*-----------------------------------HEADER-------------------------------------------*/
 
 header h1.title1 {
-    background-image: url("/images/apple-pie.jpg");
+    background-image: url("../images/apple-pie.jpg");
     background-size: cover;
     background-position: top center;
     height: 550px;

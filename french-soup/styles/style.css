@@ -44,7 +44,7 @@ div.images-info img {
 /*---------------------------HEADER------------------------------------*/
 
 header.header-image {
-  background-image: url("/images/soup.jpg");
+  background-image: url("../images/soup.jpg");
   height: 550px;
   background-position: bottom center;
   background-size: cover;
